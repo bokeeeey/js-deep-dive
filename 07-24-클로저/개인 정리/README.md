@@ -76,7 +76,7 @@ function makeCounter(aux) {
 
   // 클로저를 반환
   return function () {
-    // 인수로 전달받은 보조 함수에 상태 벼경을 위임한다.
+    // 인수로 전달받은 보조 함수에 상태 변경을 위임한다.
     counter = aux(counter);
     return counter;
   };
